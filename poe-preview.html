@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .projects,
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project,
+    .skill {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .project h3 {
+      margin-top: 10px;
+    }
+
+    .skill {
+      text-align: center;
+    }
+
+    .skill h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Creative Thinker</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="intro">
+      <h2>Welcome to My Portfolio</h2>
+      <p>
+        Hi! I'm a passionate web developer with a knack for creating beautiful,
+        user-friendly websites. I enjoy solving problems and bringing ideas to life
+        on the web.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A brief description of the project goes here.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>A brief description of the project goes here.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/300" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>A brief description of the project goes here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML</h3>
+          <p>Expert in creating semantic, accessible HTML structures.</p>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <p>Skilled in responsive design, animations, and frameworks.</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Proficient in creating dynamic and interactive web experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via email or connect with me on social media!</p>
+      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved. | <a href="#about">Back to top</a></p>
+  </footer>
+
+
+</body></html>
